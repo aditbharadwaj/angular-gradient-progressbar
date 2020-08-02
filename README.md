@@ -2,6 +2,10 @@
 
 This project was ported from react version [BlogPost](https://dev.to/raisaugat/how-to-show-progress-percentage-in-gradient-bar-2k61) to angular and converted into a [Npm Package](https://www.npmjs.com/package/angular-gradient-progressbar)
 
+## StackBlitz
+
+[StackBlitz](https://stackblitz.com/edit/angular-gradient-progress-bar-npm)
+
 ## Install the module inside your page module.
 
 ```
@@ -62,7 +66,8 @@ Their are two types of gradient progress bar included:
     `<angular-gradient-progressbar [type]="2" [secondValue]="75"]> </angular-gradient-progressbar>`
 
 ## Small Note
-More Features will be added to the package , any pull request or feature request are welcome.    
+
+More Features will be added to the package , any pull request or feature request are welcome.
 
 ## Build
 
