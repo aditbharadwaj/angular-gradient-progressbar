@@ -8,6 +8,7 @@ $range--count: 7;
 
 
 .potential__range {
+    //blocks
     --block-1: 100%;
     --white-block-1: 0%;
     --block-2: 100%;
@@ -22,6 +23,23 @@ $range--count: 7;
     --white-block-6: 0%;
     --block-7: 100%;
     --white-block-7: 0%;
+    --block-8: 100%;
+    --white-block-8: 0%;
+    --block-9: 100%;
+    --white-block-9: 0%;
+    --block-10: 100%;
+    --white-block-10: 0%;
+    //end
+
+    //passing custom tooltip text color values
+    --lowText: #f14913;
+    --mediumText: #fbaf00;
+    --highText: #0a7a30;
+    //end
+
+    //passing width of the progress bar
+    --progressBarWidth: 7;
+    //end
 
     //Indicator For Team Potential
     --left-value: 0;
@@ -32,7 +50,7 @@ $range--count: 7;
     h3 {
         font-size: 2rem;
         font-weight: 500;
-        margin-bottom: 2rem;
+        //  margin-bottom: 2rem;
 
         b {
             text-transform: capitalize;
@@ -41,10 +59,10 @@ $range--count: 7;
 
     .range {
         display: flex;
-        margin-bottom: 3.2rem;
+        //  margin-bottom: 3.2rem;
 
         .item {
-            width: calc(100% / #{$range--count});
+            width: calc(100% / #{var(--progressBarWidth)});
             height: 17px;
             position: relative;
             background-color: rgba(200, 207, 213, 0.5);
@@ -67,7 +85,7 @@ $range--count: 7;
                     background-color: #f8e2dd;
 
                     span {
-                        color: $low;
+                        color: var(--lowText);
                     }
 
                     &::after {
@@ -79,7 +97,7 @@ $range--count: 7;
                     background-color: #fff7e3;
 
                     span {
-                        color: $medium;
+                        color: var(--mediumText);
                     }
 
                     &::after {
@@ -91,7 +109,7 @@ $range--count: 7;
                     background-color: #e3f5ea;
 
                     span {
-                        color: $high;
+                        color: var(--highText);
                     }
 
                     &::after {
@@ -148,7 +166,7 @@ $range--count: 7;
                         border-radius: 50%;
                         border: 3px solid white;
                         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.22);
-                        background-color: red;
+                        background-color: #0a7a30;
                         position: absolute;
                         top: 50%;
                         left: calc(var(--left-value) - (38px / 2));
@@ -243,10 +261,46 @@ $range--count: 7;
                 }
 
                 &:nth-child(7) {
-                    background: #43c770;
                     background: linear-gradient(90deg,
-                            #43c770 var(--block-7),
-                            rgba(200, 207, 213, 0.5) var(--white-block-7));
+                            #a7b429 var(--block-7),
+                            rgba(200, 213, 200, 0.5) var(--white-block-7));
+
+                    &.current {
+                        &::before {
+                            background: #a7b429;
+                        }
+                    }
+                }
+
+                &:nth-child(8) {
+                    background: linear-gradient(90deg,
+                            #53cc7c var(--block-8),
+                            rgba(200, 207, 213, 0.5) var(--white-block-8));
+
+                    &.current {
+                        &::before {
+                            background: #53cc7c;
+                        }
+                    }
+                }
+
+                &:nth-child(9) {
+                    background: linear-gradient(90deg,
+                            #43c770 var(--block-9),
+                            rgba(200, 207, 213, 0.5) var(--white-block-9));
+
+                    &.current {
+                        &::before {
+                            background: #43c770;
+                        }
+                    }
+                }
+
+                &:nth-child(10) {
+                    background: #0a7a30;
+                    background: linear-gradient(90deg,
+                            #0a7a30 var(--block-10),
+                            rgba(200, 207, 213, 0.5) var(--white-block-10));
 
                     .indicator {
                         right: -30px;
@@ -263,7 +317,7 @@ $range--count: 7;
                         border-radius: 50%;
                         border: 3px solid white;
                         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.22);
-                        background-color: red;
+                        background-color: #0a7a30;
                         position: absolute;
                         top: 50%;
                         left: -10px;
@@ -290,7 +344,7 @@ $range--count: 7;
                 }
             }
 
-            &:nth-child(7) {
+            &:nth-child(10) {
                 svg {
                     position: absolute;
                     right: -24px;
@@ -305,29 +359,30 @@ $range--count: 7;
 /* Second Progress Bar Below */
 
 .progress {
-  height: 7px;
-  margin-bottom: -8px;
-  background-image:
-    linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 242, 0, 1) 50%, rgba(0, 255, 0, 1) 100%);
-  background-size: 100% 100%, 100% 100%;
-  background-repeat: no-repeat;
+    height: 7px;
+    margin-bottom: -8px;
+    background-image:
+        linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 242, 0, 1) 50%, rgba(0, 255, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat;
 }
 
 
 .progress_1 {
-  height: 13px;
-  width: 103%;
-  margin-bottom: -8px;
-  background-image:
-    linear-gradient(#fff, #fff);
-  background-size: var(--p, 50%) 100%, 100% 100%;
-  transform: rotate(180deg);
-  z-index: 100;
-  background-repeat: no-repeat;
+    height: 13px;
+    width: 103%;
+    margin-bottom: -8px;
+    background-image:
+        linear-gradient(#fff, #fff);
+    background-size: var(--p, 50%) 100%, 100% 100%;
+    transform: rotate(180deg);
+    z-index: 100;
+    background-repeat: no-repeat;
 }
 
 .display_ {
-  display: contents;
+    margin: 3rem 10rem;
+    padding: 1.6rem 0;
 }
 
 /* end */
