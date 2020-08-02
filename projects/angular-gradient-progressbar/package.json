@@ -3,7 +3,7 @@
   "version": "0.0.4",
     "repository": {
         "type": "git",
-        "url": "https://www.npmjs.com/package/angular-gradient-progressbar"
+        "url": "https://github.com/aditbharadwaj/angular-gradient-progressbar"
     },
   "peerDependencies": {
     "@angular/common": "^9.1.12",
