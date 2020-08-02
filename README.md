@@ -30,10 +30,10 @@ Their are two types of gradient progress bar included:
 
     b.Changing tool tip text color 3 options are available
 
-        ``` <angular-gradient-progressbar [type]="1" lowTextColor="red"> </angular-gradient-progressbar>
+        <angular-gradient-progressbar [type]="1" lowTextColor="red"> </angular-gradient-progressbar>
         <angular-gradient-progressbar [type]="1" mediumTextColor="orange"> </angular-gradient-progressbar>
         <angular-gradient-progressbar [type]="1" highTextColor="green"> </angular-gradient-progressbar>
-        ```
+
 
     c. Change Progress bar width using `progressBarWidth` ( default is 7).
 
