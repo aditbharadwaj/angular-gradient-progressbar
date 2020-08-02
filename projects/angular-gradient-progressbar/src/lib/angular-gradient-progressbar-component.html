@@ -1,0 +1,19 @@
+<ng-container *ngIf="type == 1">
+  <div style="margin-top: 30%;">
+    <div #myDiv class="potential__range">
+      <div class="range">
+        <div *ngFor="let item of elementArr; let i = index" [class]="item">
+          <div *ngIf="item === 'item current filled'" [class]="toolTipClass">
+            <span>{{ potentialLabel }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="type == 2">
+  <div class="diplay_">
+    <div class="progress"></div>
+    <div class="progress_1" style="--p:{{ truePercent1 }}%"></div>
+  </div>
+</ng-container>
