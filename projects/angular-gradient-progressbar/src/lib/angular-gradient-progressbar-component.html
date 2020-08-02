@@ -1,4 +1,4 @@
-<ng-container *ngIf="type == 1">
+<ng-container *ngIf="type === 1">
   <div style="margin-top: 30%;">
     <div #myDiv class="potential__range">
       <div class="range">
@@ -11,7 +11,7 @@
     </div>
   </div>
 </ng-container>
-<ng-container *ngIf="type == 2">
+<ng-container *ngIf="type === 2">
   <div class="diplay_">
     <div class="progress"></div>
     <div class="progress_1" style="--p:{{ truePercent1 }}%"></div>

@@ -1,6 +1,10 @@
 {
   "name": "angular-gradient-progressbar",
-  "version": "0.0.1",
+  "version": "0.0.4",
+    "repository": {
+        "type": "git",
+        "url": "https://www.npmjs.com/package/angular-gradient-progressbar"
+    },
   "peerDependencies": {
     "@angular/common": "^9.1.12",
     "@angular/core": "^9.1.12"

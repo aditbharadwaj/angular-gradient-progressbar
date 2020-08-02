@@ -31,13 +31,15 @@ export class AngularGradientProgressbarComponent
   constructor() {}
 
   ngOnInit(): void {
-    this.type = 1;
+    //this.type = 1;
   }
 
   ngAfterViewInit(): void {
     setTimeout(() => {
-      this.rangeArray();
-      this.toolTip();
+      if (this.type) {
+        this.rangeArray();
+        this.toolTip();
+      }
     });
     // console.log("this.quartileValue :", this.quartileValue);
   }
@@ -98,6 +100,6 @@ export class AngularGradientProgressbarComponent
         this.elementArr.push(this.blockClass);
       }
     }
-    console.log("this.elementArr :", this.elementArr);
+    console.log('this.elementArr :', this.elementArr);
   }
 }

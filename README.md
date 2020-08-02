@@ -1,14 +1,35 @@
-# GradientAngularProgressbar
+# Gradient Angular Progress bar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.12. its a template for ng library for publishing a package to npm.
+This project was ported from react version [BlogPost](https://dev.to/raisaugat/how-to-show-progress-percentage-in-gradient-bar-2k61).
 
-## Development server
+## Install the module inside your page module.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+` ....
+import { AngularGradientProgressbarModule } from "angular-gradient-progressbar";
+....
+@NgModule({
+  declarations: [ ... ],
+  imports: [AngularGradientProgressbarModule ]
+  })
+ export class YourModule {}
 
-## Code scaffolding
+`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage 
+
+`<angular-gradient-progressbar [type]="1"></angular-gradient-progressbar>`
+
+You need to specify a type of progress bar u want to use other wise it defaults to 1. 
+Their are two types of gradient progress bar included:
+1. Type "1": (Advance Gradient Progress Bar) Options Available for this are:
+    a. Changing tool tip text color 3 options are available
+        ` <angular-gradient-progressbar [type]="1" [lowTextColor]="red"> </angular-gradient-progressbar> 
+        <angular-gradient-progressbar [type]="1" [mediumTextColor]="orange"> </angular-gradient-progressbar>
+        <angular-gradient-progressbar [type]="1" [highTextColor]="green"> </angular-gradient-progressbar> 
+        `
+2. Type "2": (Simple CSS Gradient Progress Bar) Options Available for this are:
+    a.
+
 
 ## Build
 
@@ -18,10 +39,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
