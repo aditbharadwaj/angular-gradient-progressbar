@@ -61,6 +61,9 @@ Their are two types of gradient progress bar included:
 
     `<angular-gradient-progressbar [type]="2" [secondValue]="75"]> </angular-gradient-progressbar>`
 
+## Small Note
+More Features will be added to the package , any pull request or feature request are welcome.    
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
