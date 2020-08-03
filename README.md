@@ -61,7 +61,7 @@ Their are two types of gradient progress bar included:
 
 2.  Type "2": (Simple CSS Gradient Progress Bar) Options Available for this are:
 
-    a. if the type is set to 2 you can set the progress value for the second progress bar using `secondValue` ( default value is 75)
+    a. if the type is set to 2 you can set the progress value for the second progress bar using `secondValue` ( default value is 75 and max is 100)
 
     `<angular-gradient-progressbar [type]="2" [secondValue]="75"]> </angular-gradient-progressbar>`
 
