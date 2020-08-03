@@ -1,5 +1,5 @@
 <p align="center">
-   # Angular Gradient Progress Bar
+   <h1>Angular Gradient Progress Bar</h1>
 </p>
 <!-- Badges -->
 <p align="center">
