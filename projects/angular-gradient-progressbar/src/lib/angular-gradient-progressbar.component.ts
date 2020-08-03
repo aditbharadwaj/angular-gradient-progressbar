@@ -40,7 +40,7 @@ export class AngularGradientProgressbarComponent
   //end
 
   //show tooltip or not
-  @Input() showTollTip: boolean = true; // default is true
+  @Input() showToolTip: boolean = true; // default is true
   //end
 
   //simple progress bar value
@@ -121,7 +121,7 @@ export class AngularGradientProgressbarComponent
                 percent
               );
             }
-            if (this.showTollTip) {
+            if (this.showToolTip) {
               this.blockClass =
                 'item ' + (i === quartileValue ? 'current filled' : '');
               this.elementArr.push(this.blockClass);

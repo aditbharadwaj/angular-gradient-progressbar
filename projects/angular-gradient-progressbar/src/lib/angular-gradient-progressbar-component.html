@@ -8,10 +8,10 @@
         <div class="range">
           <div *ngFor="let item of elementArr; let i = index" [class]="item">
             <div
-              *ngIf="item === 'item current filled' && showTollTip"
+              *ngIf="item === 'item current filled' && showToolTip"
               [class]="toolTipClass"
             >
-              <span *ngIf="showTollTip">{{ potentialLabel }}</span>
+              <span *ngIf="showToolTip">{{ potentialLabel }}</span>
             </div>
           </div>
         </div>

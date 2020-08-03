@@ -1,12 +1,31 @@
-# Gradient Angular Progress bar
+<p align="center">
+   Angular Gradient Progress Bar
+</p>
+<!-- Badges -->
+<p align="center">
+<a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://badgen.net/badge/icon/v0.0.9?icon=npm&label"/>
+</a>
+<a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://badgen.net/badge/downloads/500/week/green"/>
+</a>
+<a href="https://github.com/aditbharadwaj/angular-gradient-progressbar"><img src=https://badgen.net/badge/icon/github?icon=github&label"/>
+</a>
+</p>
 
-This project was ported from react version [BlogPost](https://dev.to/raisaugat/how-to-show-progress-percentage-in-gradient-bar-2k61) to angular and converted into a [Npm Package](https://www.npmjs.com/package/angular-gradient-progressbar)
+<!-- end -->
+
+## Gradient Angular Progress bar
+
+<p>This project was ported from react version [BlogPost](https://dev.to/raisaugat/how-to-show-progress-percentage-in-gradient-bar-2k61) to angular and converted into a [Npm Package](https://www.npmjs.com/package/angular-gradient-progressbar)</p>
 
 ## StackBlitz
 
 [StackBlitz](https://stackblitz.com/edit/angular-gradient-progress-bar-npm) Demo here !
 
-## Install the module inside your page module.
+## Installation
+
+`npm i angular-gradient-progressbar`
+
+## Import the module inside your page module.
 
 ```
 import { AngularGradientProgressbarModule } from "angular-gradient-progressbar";
@@ -20,7 +39,7 @@ import { AngularGradientProgressbarModule } from "angular-gradient-progressbar";
 
 ## Usage
 
-inside your `page.component.html`
+Inside your `page.component.html`
 
 `<angular-gradient-progressbar [type]="1"></angular-gradient-progressbar>`
 
@@ -29,6 +48,7 @@ You need to specify a type of progress bar you want to use other wise it default
 Their are two types of gradient progress bar included:
 
 1.  Type "1": (Advance Gradient Progress Bar) Options Available for this are:
+
     a. Provide Value for the progress bar using `value` (defaults to 75)
     `<angular-gradient-progressbar [type]="1" [value] ="75"]> </angular-gradient-progressbar>`
 
@@ -37,7 +57,6 @@ Their are two types of gradient progress bar included:
         <angular-gradient-progressbar [type]="1" lowTextColor="red"> </angular-gradient-progressbar>
         <angular-gradient-progressbar [type]="1" mediumTextColor="orange"> </angular-gradient-progressbar>
         <angular-gradient-progressbar [type]="1" highTextColor="green"> </angular-gradient-progressbar>
-
 
     c. Change Progress bar width using `progressBarWidth` ( default is 7).
 
@@ -55,19 +74,15 @@ Their are two types of gradient progress bar included:
 
     > Note: In the above example anything below 4 is low, between 4 and 7 is medium and anything above 7 is high. If u are changing these values make sure your aware of the barCount value as that quatile showcase can change accordingly.
 
-    f. You can show and hide tooltip by setting `showToolTip` trur or false ( default is true).
+    f. You can show and hide tooltip by setting `showToolTip` true or false ( default is true).
 
-    `<angular-gradient-progressbar [type]="1" [showTollTip]="true"]> </angular-gradient-progressbar>`
+    `<angular-gradient-progressbar [type]="1" [showToolTip]="true"]> </angular-gradient-progressbar>`
 
 2.  Type "2": (Simple CSS Gradient Progress Bar) Options Available for this are:
 
     a. if the type is set to 2 you can set the progress value for the second progress bar using `secondValue` ( default value is 75 and max is 100)
 
     `<angular-gradient-progressbar [type]="2" [secondValue]="75"]> </angular-gradient-progressbar>`
-
-## Small Note
-
-More Features will be added to the package , any pull request or feature request are welcome.
 
 ## Build
 
