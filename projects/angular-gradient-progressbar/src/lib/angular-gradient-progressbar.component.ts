@@ -45,7 +45,7 @@ export class AngularGradientProgressbarComponent
 
   //simple progress bar value
   @Input() secondValue: number = 75; // default is 75
-  value1 = 100 - this.secondValue;
+  value1: number;
   //end
 
   blockClass: any;
@@ -67,6 +67,8 @@ export class AngularGradientProgressbarComponent
       if (this.type === 1) {
         this.rangeArray();
         this.toolTip();
+      } else if (this.type === 2) {
+        this.value1 = 100 - this.secondValue;
       }
     });
     // console.log("this.quartileValue :", this.quartileValue);

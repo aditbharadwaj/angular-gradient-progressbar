@@ -4,7 +4,7 @@ This project was ported from react version [BlogPost](https://dev.to/raisaugat/h
 
 ## StackBlitz
 
-[StackBlitz](https://stackblitz.com/edit/angular-gradient-progress-bar-npm)
+[StackBlitz](https://stackblitz.com/edit/angular-gradient-progress-bar-npm) Demo here !
 
 ## Install the module inside your page module.
 
