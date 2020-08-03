@@ -1,11 +1,11 @@
 <p align="center">
-   Angular Gradient Progress Bar
+   # Angular Gradient Progress Bar
 </p>
 <!-- Badges -->
 <p align="center">
 <a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://badgen.net/badge/icon/v0.0.9?icon=npm&label"/>
 </a>
-<a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://badgen.net/badge/downloads/500/week/green"/>
+<a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://badgen.net/badge/downloads/500\week/green"/>
 </a>
 <a href="https://github.com/aditbharadwaj/angular-gradient-progressbar"><img src=https://badgen.net/badge/icon/github?icon=github&label"/>
 </a>
