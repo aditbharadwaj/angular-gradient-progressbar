@@ -15,7 +15,7 @@
 
 ## Gradient Angular Progress bar
 
-<p>This is a simple package that provide 2 variants of the progress bars that a user can use:
+<p>This angular package provides 2 variants of the progress bars that can be used:
   
    a. Advance Progress Bar
   <img src="https://user-images.githubusercontent.com/6751554/89296201-a7a4af80-d67f-11ea-94a5-b50d604c818b.PNG"/>
