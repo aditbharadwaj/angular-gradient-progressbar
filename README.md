@@ -18,7 +18,7 @@
 <p>This angular package provides 2 variants of the progress bars that can be used:
   
    a. Advance Progress Bar
-  <img src="https://user-images.githubusercontent.com/6751554/89296201-a7a4af80-d67f-11ea-94a5-b50d604c818b.PNG"/>
+  <img src="https://user-images.githubusercontent.com/6751554/89441965-9c2eb280-d76b-11ea-85ca-3f2e1868cf51.PNG"/>
    
    b. Simple Progress Bar   
   <img src="https://user-images.githubusercontent.com/6751554/89295854-3664fc80-d67f-11ea-98d8-a422c62d8b65.PNG"/>
