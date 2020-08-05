@@ -3,11 +3,11 @@
 </p>
 <!-- Badges -->
 <p align="center">
-<a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://badgen.net/badge/icon/v0.0.9?icon=npm&label"/>
+<a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://img.shields.io/npm/dw/angular-gradient-progressbar"/>
 </a>
-<a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://badgen.net/badge/downloads/500\week/green"/>
+<a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://img.shields.io/npm/v/angular-gradient-progressbar?color=red"/>
 </a>
-<a href="https://github.com/aditbharadwaj/angular-gradient-progressbar"><img src=https://badgen.net/badge/icon/github?icon=github&label"/>
+<a href="https://github.com/aditbharadwaj/angular-gradient-progressbar"><img src=https://img.shields.io/github/stars/aditbharadwaj/angular-gradient-progressbar?style=social"/>
 </a>
 </p>
 
