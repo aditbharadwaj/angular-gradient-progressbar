@@ -7,7 +7,7 @@
 </a>
 <a href="https://www.npmjs.com/package/angular-gradient-progressbar"><img src="https://img.shields.io/npm/v/angular-gradient-progressbar?color=red"/>
 </a>
-<a href="https://github.com/aditbharadwaj/angular-gradient-progressbar"><img src=https://img.shields.io/github/stars/aditbharadwaj/angular-gradient-progressbar?style=social"/>
+<a href="https://github.com/aditbharadwaj/angular-gradient-progressbar"><img src="https://img.shields.io/github/stars/aditbharadwaj/angular-gradient-progressbar?label=github%20Stars&style=social"/>
 </a>
 </p>
 
