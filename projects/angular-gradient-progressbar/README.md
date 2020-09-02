@@ -18,7 +18,7 @@
 <p>This angular package provides 2 variants of the progress bars that can be used:
   
    a. Advance Progress Bar
-  <img src="https://user-images.githubusercontent.com/6751554/89296201-a7a4af80-d67f-11ea-94a5-b50d604c818b.PNG"/>
+  <img src="https://user-images.githubusercontent.com/6751554/89441965-9c2eb280-d76b-11ea-85ca-3f2e1868cf51.PNG"/>
    
    b. Simple Progress Bar   
   <img src="https://user-images.githubusercontent.com/6751554/89295854-3664fc80-d67f-11ea-98d8-a422c62d8b65.PNG"/>
@@ -29,6 +29,10 @@
 ## StackBlitz
 
 [StackBlitz](https://stackblitz.com/edit/angular-gradient-progress-bar-npm) Demo here !
+
+## Support
+
+<p>For any support requests please contact contact@tekspect.com</p>
 
 ## Installation
 
@@ -92,7 +96,7 @@ Their are two types of gradient progress bar included:
     a. if the type is set to 2 you can set the progress value for the second progress bar using `secondValue` ( default value is 75 and max is 100)
 
     `<angular-gradient-progressbar [type]="2" [secondValue]="75"]> </angular-gradient-progressbar>`
-    
+
 ## Note
 
 > Note: This project was ported from react version [BlogPost](https://dev.to/raisaugat/how-to-show-progress-percentage-in-gradient-bar-2k61) to angular and converted into a [Npm Package](https://www.npmjs.com/package/angular-gradient-progressbar)
