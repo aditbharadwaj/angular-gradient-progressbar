@@ -32,7 +32,7 @@
 
 ## Support
 
-<p>For any support requests please contact `contact@tekspect.com`</p>
+<p>For any support requests please contact</p> `contact@tekspect.com`
 
 ## Installation
 
