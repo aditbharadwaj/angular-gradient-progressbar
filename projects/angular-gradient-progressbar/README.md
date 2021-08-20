@@ -28,13 +28,13 @@
 
 ## StackBlitz
 
-[StackBlitz](https://stackblitz.com/edit/angular-gradient-progress-bar-npm) Demo here !
+[StackBlitz](https://stackblitz.com/edit/angular-ivy-9ugyso?file=src/app/app.component.html) Demo here !
 
 ## Support
 
-<p>For any support requests please contact </p> 
+<p>For any support requests please contact </p>
 
-> contact@tekspect.com 
+> contact@tekspect.com
 
 ## Installation
 
