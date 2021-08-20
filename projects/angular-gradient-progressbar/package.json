@@ -6,8 +6,8 @@
     "url": "https://github.com/aditbharadwaj/angular-gradient-progressbar"
   },
   "peerDependencies": {
-    "@angular/common": "^9.1.12",
-    "@angular/core": "^9.1.12"
+    "@angular/compiler": "~12.2.2",
+    "@angular/core": "~12.2.2"
   },
   "dependencies": {
     "tslib": "^2.0.0"
