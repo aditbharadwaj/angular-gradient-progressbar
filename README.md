@@ -75,7 +75,7 @@ Their are two types of gradient progress bar included:
 
     c. Change Progress bar width using `progressBarWidth` ( default is 7).
 
-    > Note: Porgres Bar width works in opposite way higher the value lower the width and vice a versa.
+    > Note: Progress Bar width works in opposite way higher the value lower the width and vice a versa.
 
     `<angular-gradient-progressbar [type]="1" [progressBarWidth]="7"]> </angular-gradient-progressbar>`
 

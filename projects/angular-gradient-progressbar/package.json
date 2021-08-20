@@ -1,15 +1,21 @@
 {
   "name": "angular-gradient-progressbar",
-  "version": "0.0.10",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/aditbharadwaj/angular-gradient-progressbar"
-    },
+  "version": "0.0.11",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aditbharadwaj/angular-gradient-progressbar"
+  },
   "peerDependencies": {
     "@angular/common": "^9.1.12",
     "@angular/core": "^9.1.12"
   },
   "dependencies": {
     "tslib": "^1.10.0"
-  }
+  },
+  "keywords": [
+    "angular",
+    "css",
+    "progressbar",
+    "ts"
+  ]
 }
