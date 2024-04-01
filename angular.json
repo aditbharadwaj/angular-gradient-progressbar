@@ -28,23 +28,10 @@
             "tsConfig": "projects/angular-gradient-progressbar/tsconfig.spec.json",
             "karmaConfig": "projects/angular-gradient-progressbar/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/angular-gradient-progressbar/tsconfig.lib.json",
-              "projects/angular-gradient-progressbar/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     }},
   "cli": {
     "analytics": false
-  },
-  "defaultProject": "angular-gradient-progressbar"
+  }
 }

@@ -2,7 +2,6 @@ import {
   Component,
   OnInit,
   Input,
-  Type,
   ViewChild,
   ElementRef,
   AfterViewInit,
@@ -14,38 +13,39 @@ import {
   styleUrls: ['./angular-gradient-progressbar.scss'],
 })
 export class AngularGradientProgressbarComponent
-  implements OnInit, AfterViewInit {
+  implements OnInit, AfterViewInit
+{
   //type of progress bar
-  @Input() type: number = 1; //default is 1
+  @Input() type = 1; //default is 1
   //end
   //tool tip textcolor
-  @Input() lowTextColor: string;
-  @Input() mediumTextColor: string;
-  @Input() highTextColor: string;
+  @Input() lowTextColor = '';
+  @Input() mediumTextColor = '';
+  @Input() highTextColor = '';
   //end
   //adjusting width of the progress bar
-  @Input() progressBarWidth: number = 7; //default is 7
+  @Input() progressBarWidth = 7; //default is 7
   //end
   // number of bars
-  @Input() barCount: number = 7; // default is 7 and max is 10
+  @Input() barCount = 7; // default is 7 and max is 10
   //end
   // value of the progress bar
-  @Input() value: number = 75; // default is 75
+  @Input() value = 75; // default is 75
   //end
   // Quartle value of the progress bar
-  @Input() quartileValueLow: number = 4; //default to 4
-  @Input() quartileValueHigh: number = 7; // default to 7
-  quartileValue: number;
+  @Input() quartileValueLow = 4; //default to 4
+  @Input() quartileValueHigh = 7; // default to 7
+  quartileValue = 0;
   quartilePercentage: any;
   //end
 
   //show tooltip or not
-  @Input() showToolTip: boolean = true; // default is true
+  @Input() showToolTip = true; // default is true
   //end
 
   //simple progress bar value
-  @Input() secondValue: number = 75; // default is 75
-  value1: number;
+  @Input() secondValue = 75; // default is 75
+  value1 = 0;
   //end
 
   blockClass: any;
@@ -57,10 +57,7 @@ export class AngularGradientProgressbarComponent
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.log('his.lowTextColor :', this.lowTextColor);
-    //this.type = 1;
-  }
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
     setTimeout(() => {
@@ -71,7 +68,6 @@ export class AngularGradientProgressbarComponent
         this.value1 = 100 - this.secondValue;
       }
     });
-    // console.log("this.quartileValue :", this.quartileValue);
   }
 
   toolTip() {
@@ -83,7 +79,6 @@ export class AngularGradientProgressbarComponent
         ? 'medium'
         : 'high';
     this.toolTipClass = 'indicator ' + this.potentialLabel;
-    //console.log("this.potentialLabel :", this.potentialLabel);
   }
 
   rangeArray() {
@@ -94,21 +89,17 @@ export class AngularGradientProgressbarComponent
       let quartileValue: any;
       for (let i = 1; i <= this.barCount; i++) {
         const currentPoint = Math.round(this.quartilePercentage * i);
-        //console.log('currentPoint :', currentPoint);
         if (this.value <= currentPoint) {
           //Check if percent and quartile value is present of not. This runs only one time
           if (!percent && !quartileValue) {
-            // console.log(" enterd:");
             const previousPoint = Math.round(this.quartilePercentage * (i - 1));
             const difference = currentPoint - previousPoint;
             quartileValue = i;
             percent =
               Math.round(((this.value - previousPoint) / difference) * 100) +
               '%';
-            //  console.log("percent :", percent);
           }
           if (percent && quartileValue) {
-            // console.log("percent :", percent);
             if (i === quartileValue) {
               // set specified block value so that it can be used to make gradient
               this.divView.nativeElement.style.setProperty(
@@ -136,7 +127,6 @@ export class AngularGradientProgressbarComponent
           this.elementArr.push(this.blockClass);
         }
       }
-      //console.log("this.elementArr :", this.elementArr);
     }
   }
 }
