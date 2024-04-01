@@ -33,6 +33,5 @@
     }},
   "cli": {
     "analytics": false
-  },
-  "defaultProject": "angular-gradient-progressbar"
+  }
 }
