@@ -1,28 +1,27 @@
 <ng-container *ngIf="type === 1">
-    <div>
-      <div
-        #myDiv
-        class="potential__range"
-        style="--lowText:{{ lowTextColor }} ; --mediumText:{{mediumTextColor}}; --highText:{{highTextColor}}; --progressBarWidth:{{progressBarWidth}};"
-      >
-        <div class="range">
-          <div *ngFor="let item of elementArr; let i = index" [class]="item">
-            <div
-              *ngIf="item === 'item current filled' && showToolTip"
-              [class]="toolTipClass"
-            >
-              <span *ngIf="showToolTip">{{ potentialLabel }}</span>
-            </div>
+  <div>
+    <div
+      #myDiv
+      class="potential__range"
+      style="--lowText:{{ lowTextColor }} ; --mediumText:{{mediumTextColor}}; --highText:{{highTextColor}}; --progressBarWidth:{{progressBarWidth}};"
+    >
+      <div class="range">
+        <div *ngFor="let item of elementArr; let i = index" [class]="item">
+          <div
+            *ngIf="item === 'item current filled' && showToolTip"
+            [class]="toolTipClass"
+          >
+            <span *ngIf="showToolTip">{{ potentialLabel }}</span>
           </div>
         </div>
       </div>
     </div>
-  </ng-container>
+  </div>
+</ng-container>
 
-  <ng-container *ngIf="type === 2 && secondValue <=100 ">
-    <div class="display_">
-      <div class="progress"></div>
-      <div class="progress_1" style="--p:{{ value1 }}%"></div>
-    </div>
-  </ng-container>
-  
+<ng-container *ngIf="type === 2 && secondValue <=100 ">
+  <div class="display_">
+    <div class="progress"></div>
+    <div class="progress_1" style="--p:{{ value1 }}%"></div>
+  </div>
+</ng-container>
