@@ -75,7 +75,7 @@ Their are two types of gradient progress bar included:
 
     c. Change Progress bar width using `progressBarWidth` ( default is 7).
 
-    > Note: Progress Bar width works in opposite way higher the value lower the width and vice a versa.
+    > **Note:** Progress Bar width works in opposite way higher the value lower the width and vice a versa.
 
     `<angular-gradient-progressbar [type]="1" [progressBarWidth]="7"]> </angular-gradient-progressbar>`
 
@@ -85,9 +85,10 @@ Their are two types of gradient progress bar included:
 
     e. You Can change the Quartile Value of the progress bar which define the number of data points to define range for (low,medium,high) using `quartileValueLow` and `quartileValueHigh`.
 
-    `<angular-gradient-progressbar [type]="1" [quartileValueLow]="4" [quartileValueHigh]="7"]> </angular-gradient-progressbar>`
+    `<angular-gradient-progressbar [type]="1" [quartileValueLow]="3" [quartileValueHigh]="6"]> </angular-gradient-progressbar>`
 
-    > Note: In the above example anything below 4 is low, between 4 and 7 is medium and anything above 7 is high. If u are changing these values make sure your aware of the barCount value as that quatile showcase can change accordingly.
+    > **Note:** In the above example anything below 3 is low, between 3 and 6 is medium and anything above 6 is high. If u are changing these values make sure your aware of the barCount value as that quartile showcase can change accordingly. 
+      For the default of `barCount = 7` every quartile will be `100 / 7 = 14.29 %`. The default of `quartileValueLow = 3` will render everything below `3 * 14.29 % = 42.87%`as `low`.
 
     f. You can show and hide tooltip by setting `showToolTip` true or false ( default is true).
 
@@ -101,7 +102,7 @@ Their are two types of gradient progress bar included:
 
 ## Note
 
-> Note: This project was ported from react version [BlogPost](https://dev.to/raisaugat/how-to-show-progress-percentage-in-gradient-bar-2k61) to angular and converted into a [Npm Package](https://www.npmjs.com/package/angular-gradient-progressbar)
+> **Note:** This project was ported from react version [BlogPost](https://dev.to/raisaugat/how-to-show-progress-percentage-in-gradient-bar-2k61) to angular and converted into a [Npm Package](https://www.npmjs.com/package/angular-gradient-progressbar)
 
 ## Build
 

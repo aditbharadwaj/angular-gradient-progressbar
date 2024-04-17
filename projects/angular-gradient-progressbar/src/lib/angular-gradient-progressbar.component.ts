@@ -33,8 +33,8 @@ export class AngularGradientProgressbarComponent
   @Input() value = 75; // default is 75
   //end
   // Quartle value of the progress bar
-  @Input() quartileValueLow = 4; //default to 4
-  @Input() quartileValueHigh = 7; // default to 7
+  @Input() quartileValueLow = 3; //default to 3
+  @Input() quartileValueHigh = 6; // default to 6
   quartileValue = 0;
   quartilePercentage: any;
   //end
