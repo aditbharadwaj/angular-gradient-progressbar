@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'latest'
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm install    
+    - name: Run tests
+      run: |
+           export DISPLAY=:99
+           sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 &
+           npm test
